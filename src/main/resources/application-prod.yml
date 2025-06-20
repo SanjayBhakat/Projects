@@ -1,0 +1,37 @@
+spring:
+
+#  redis:
+#    host: redis-12504.c305.ap-south-1-1.ec2.redns.redis-cloud.com
+#    port: 12504
+#    password: CfKtf52h6lmx3HLVUhBT6F33iXOewDmn
+
+  data:
+    redis:
+      host: redis-12504.c305.ap-south-1-1.ec2.redns.redis-cloud.com
+      port: 12504
+      password: CfKtf52h6lmx3HLVUhBT6F33iXOewDmn
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: journaldb
+      auto-index-creation: true
+
+server:
+  port: 8082
+  servlet:
+    context-path: /journal
+
+weather:
+  api:
+    key: 7d2d34dd4baf02da4552d39b2862942d
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: bhakatsanjay15@gmail.com
+  password: lnbx sspr gicq znav
+  properties:
+    mail:
+      smtp:
+        auth: true
+        starttls:
+          enable: true
